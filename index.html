@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>حاسبة وزن كمرات I-Beam</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>حاسبة وزن كمرات I-Beam</h2>
+
+  <label>طول الكمرة (مم):</label>
+  <input type="number" id="length">
+
+  <label>عرض الويب (مم):</label>
+  <input type="number" id="webHeight">
+
+  <label>سُمك الويب (مم):</label>
+  <input type="number" id="webThickness">
+
+  <label>عرض الفلانشة 1 (مم):</label>
+  <input type="number" id="flange1Width">
+
+  <label>سُمك الفلانشة 1 (مم):</label>
+  <input type="number" id="flange1Thickness">
+
+  <label>عرض الفلانشة 2 (مم):</label>
+  <input type="number" id="flange2Width">
+
+  <label>سُمك الفلانشة 2 (مم):</label>
+  <input type="number" id="flange2Thickness">
+
+  <label>عدد الكمرات:</label>
+  <input type="number" id="count" value="1">
+
+  <button onclick="calculateWeight()">احسب الوزن</button>
+
+  <div id="result"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
